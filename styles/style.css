@@ -22,6 +22,7 @@
     transition: 0.4s;
     scroll-behavior: smooth;
     color: var(--gray-900);
+    cursor: progress;
 }
 body{
     background-color: var(--gray-900);
