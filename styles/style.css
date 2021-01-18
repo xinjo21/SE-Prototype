@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap');
+
+:root{
+    --emerald-500: #10B981;
+    --emerald-600: #059669;
+    --red-500: #EF4444;
+    --amber-500: #F59E0B;
+
+    --gray-50: #F9FAFB;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --gray-500: #6B7280;
+    --gray-700: #374151;
+    --gray-900: #111827;
+}
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+    scroll-behavior: smooth;
+    color: var(--gray-900);
+/*     font-size: 1.5vh; */
+}
+body{
+    background-color: var(--gray-900);
+}
+h1, h2, h3, h4, h5, h6{
+    /* letter-spacing: 0.5px; */
+    margin-bottom: 1.25vh;
+}
+
+button{
+    padding: 8px 22px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--emerald-500);
+    color: var(--gray-50);
+    border: none;
+    box-shadow: none;
+}
+button:hover{
+    background-color: var(--emerald-600);
+    box-shadow: 0px 1px 5px var(--gray-500);
+}
+input{
+    padding: 8px 10px;
+    border: 1px solid var(--gray-200);
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 225px;
+}
+svg{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* STATIC CLASS CSS */
+
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+.right-flex{
+    margin-left: auto;
+}
+.left-flex{
+    margin-right: auto;
+}
+.bot-flex{
+    margin-top: auto;
+}
+.top-flex{
+    margin-bottom: auto;
+}
+.cardContent{
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px var(--gray-200);
+}
+.listStyleNone{
+    list-style-type: none;
+}
+
+
+
+/* CUSTOM CSS */
+
+.loginFormBox{
+    width: 900px;
+    height: 550px;
+    background-color: var(--gray-100);
+    margin: auto;
+    overflow: hidden;
+}
+.loginForm{
+    width: 250px;
+    height: inherit;
+    background-color: var(--gray-200);
+    padding: 12px 18px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loginContent{
+    padding: 20px;
+    width: inherit;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imgLoginBan{
+    width: 500px;
+}
