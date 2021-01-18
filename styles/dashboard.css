@@ -23,9 +23,7 @@
     scroll-behavior: smooth;
     color: var(--gray-900);
 }
-body{
-    background-color: var(--gray-900);
-}
+
 h1, h2, h3, h4, h5, h6{
     /* letter-spacing: 0.5px; */
     margin-bottom: 1.25vh;
@@ -55,65 +53,97 @@ input{
 svg{
     width: 20px;
     height: 20px;
+    margin: 5px;
 }
 
-
-/* STATIC CLASS CSS */
+/* STATIC CLASS */
 
 .flex-box {
     display: flex;
     align-items: center;
 }
-.right-flex{
+.right{
     margin-left: auto;
 }
-.left-flex{
+.left{
     margin-right: auto;
 }
-.bot-flex{
+.bot{
     margin-top: auto;
 }
-.top-flex{
+.top{
     margin-bottom: auto;
 }
-.cardContent{
-    padding: 15px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 3px 5px var(--gray-200);
-}
-.listStyleNone{
-    list-style-type: none;
+
+.contentDivider{
+    border-top: 1px solid var(--gray-500);
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
-
+.whiteC{
+    color: var(--gray-50);
+}
 
 /* CUSTOM CSS */
-
-.loginFormBox{
-    width: 900px;
-    height: 550px;
-    background-color: var(--gray-100);
-    margin: auto;
-    overflow: hidden;
+.header{
+    background-color: var(--gray-900);
+    color: var(--gray-50);
+    width: 82vw;
+    padding: 10px;
 }
-.loginForm{
-    width: 250px;
-    height: inherit;
-    background-color: var(--gray-200);
-    padding: 12px 18px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.header h4{
+    color:var(--gray-50);
+    display: inline;
+    margin-bottom: 0;
 }
-.loginContent{
-    padding: 20px;
+.user{
+    color: white;
+    margin-left: auto;
+    right: 0;
+}
+.user button{
     width: inherit;
-    height: inherit;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: var(--gray-900);
+    color: var(--gray-90);
+    border: none;
+    box-shadow: none;
+    text-align: left;
 }
-.imgLoginBan{
-    width: 500px;
+.user button:hover{
+    background-color: var(--gray-700);
+    box-shadow: none;
+}
+
+
+.sidebar {
+    width: 18vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--gray-100);
+}
+.banner{
+    margin: 10px;
+    align-items: center;
+    height: 90px;
+}
+.sidebar button{
+    width: inherit;
+    padding: 20px;
+    border-radius: 0;
+    margin: auto;
+    background-color: var(--gray-100);
+    color: var(--gray-90);
+    border: none;
+    box-shadow: none;
+    text-align: left;
+}
+
+.sidebar button:hover{
+    background-color: var(--gray-200);
+    box-shadow: none;
 }
