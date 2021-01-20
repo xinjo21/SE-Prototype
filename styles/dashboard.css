@@ -56,6 +56,14 @@ input{
     margin-bottom: 10px;
     width: 225px;
 }
+select{
+    padding: 7px 10px;
+    border: 1px solid var(--gray-200);
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 225px;
+}
 svg{
     width: 20px;
     height: 20px;
@@ -68,6 +76,13 @@ svg{
     display: flex;
     align-items: center;
 }
+.flexDirCol{
+    flex-direction: column;
+}
+.alignItemsLeft{
+    align-items: flex-start;
+}
+
 .right{
     margin-left: auto;
 }
@@ -164,7 +179,7 @@ svg{
 }
 
 
-#Dashboard {
+#Certificates {
     display: block;
 }
 
@@ -197,7 +212,7 @@ thead{
 }
 
 td button {
-    padding: 1px 1px;
+    padding: 1px 3px;
     border-radius: 1000px;
     margin-top: 10px;
     background-color: var(--gray-50);
@@ -210,3 +225,20 @@ td button:hover{
     box-shadow: 0px 1px 5px var(--gray-500);
     cursor: pointer;
 }
+
+.rndBtn {
+    padding: 1px 3px;
+    border-radius: 1000px;
+    margin: 5px;
+    background-color: var(--gray-50);
+    color: var(--gray-50);
+    box-shadow: none;
+    font-size: 0.75rem;
+}
+
+.rndBtn:hover{
+    background-color: var(--gray-200);
+    box-shadow: 0px 1px 5px var(--gray-500);
+    cursor: pointer;
+}
+

@@ -127,8 +127,8 @@
                             </tbody>
                         </table>
                     </div>
-                    <button onclick="openPage('Audit')" >Go to Audit</button>
-                    
+                    <button onclick="openPage('Audit')">Go to Audit</button>
+
                 </div>
 
                 <div id="Household" class="tabContent">
@@ -264,7 +264,64 @@
                 </div>
 
                 <div id="Certificates" class="tabContent">
-                    certificates
+                    <h2>Certificate</h2>
+                    <div class="contentDivider"></div>
+
+                    <form action="" class='flex-box flexDirCol'>
+
+                        <div class="flex-box flexDirCol left alignItemsLeft">
+                            <label for="cntrlno">Control No.</label>
+                            <input type="text" name="cntrlno" id="cntrlno" readonly placeholder="00321">
+                        </div>
+
+                        <div class="flex-box flexDirCol left alignItemsLeft">
+                            <label for="cert">Type of Certificate</label>
+                            <select name="cert" id="cert">
+                                <option value="cert">Barangay Clearance</option>
+                                <option value="">Business Clearance</option>
+                                <option value="">Certificate of Good Moral</option>
+                                <option value="">Certificate of Indigency</option>
+                            </select>
+                        </div>
+
+                        <div class="flex-box flexDirCol left alignItemsLeft">
+                            <label for="">Name</label>
+                            <div class="flex-box flexDirRow">
+                                <input type="text" name="" id="">
+                                <button class='rndBtn'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex-box flexDirCol left alignItemsLeft">
+                            <label for="">Address</label>
+                            <input type="text" name="" id="">
+                        </div>
+
+                        <div class="left">
+                            <label for="">Gender</label>
+                            <div>
+                                <input type="radio" name="gender" id="male" style="width: auto;">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="female" style="width: auto;">
+                                <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="gender" id="other" style="width: auto;">
+                                <label for="other">Other</label>
+                            </div>
+
+                        </div>
+
+
+                    </form>
                 </div>
 
                 <div id="Audit" class="tabContent">
