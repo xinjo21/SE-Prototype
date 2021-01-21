@@ -79,6 +79,9 @@ svg{
 .flexDirCol{
     flex-direction: column;
 }
+.flexDirRow{
+    flex-direction: row;
+}
 .alignItemsLeft{
     align-items: flex-start;
 }
@@ -179,7 +182,7 @@ svg{
 }
 
 
-#Certificates {
+#Dashboard {
     display: block;
 }
 
