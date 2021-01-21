@@ -132,7 +132,7 @@
                 </div>
 
                 <div id="Household" class="tabContent">
-                    <h2>Household and Residents</h2>
+                    <h2>Household and Residents List</h2>
                     <div class="contentDivider"></div>
 
                     <h4>Residents</h4>
@@ -233,6 +233,7 @@
                     <h2>Business</h2>
                     <div class="contentDivider"></div>
 
+                    <h4>Business Establishments List</h4>
                     <table>
                         <thead>
                             <tr>
@@ -266,62 +267,111 @@
                 <div id="Certificates" class="tabContent">
                     <h2>Certificate</h2>
                     <div class="contentDivider"></div>
-
-                    <form action="" class='flex-box flexDirCol'>
-
-                        <div class="flex-box flexDirCol left alignItemsLeft">
-                            <label for="cntrlno">Control No.</label>
-                            <input type="text" name="cntrlno" id="cntrlno" readonly placeholder="00321">
+                    <div class="flex-box">
+                        <div class='vertContentDivider'>
+                            <form action="" class='flex-box flexDirCol'>
+    
+                                <div class="flex-box flexDirCol left alignItemsLeft">
+                                    <label for="cntrlno">Control No.</label>
+                                    <input type="text" name="cntrlno" id="cntrlno" readonly placeholder="00321">
+                                </div>
+    
+                                <div class="flex-box flexDirCol left alignItemsLeft">
+                                    <label for="cert">Type of Certificate</label>
+                                    <select name="cert" id="cert">
+                                        <option value="">Barangay Clearance</option>
+                                        <option value="">Business Clearance</option>
+                                        <option value="">Certificate of Good Moral</option>
+                                        <option value="">Certificate of Indigency</option>
+                                    </select>
+                                </div>
+    
+                                <div class="flex-box flexDirCol left alignItemsLeft">
+                                    <label for="">Name</label>
+                                    <div class="flex-box flexDirRow">
+                                        <input type="text" name="" id="">
+                                        <button class='rndBtn'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+    
+                                <div class="flex-box flexDirCol left alignItemsLeft">
+                                    <label for="">Address</label>
+                                    <input type="text" name="" id="">
+                                </div>
+    
+                                <div class="left">
+                                    <label for="">Gender</label>
+                                    <div>
+                                        <input type="radio" name="gender" id="male" style="width: auto;">
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="gender" id="female" style="width: auto;">
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="gender" id="other" style="width: auto;">
+                                        <label for="other">Other</label>
+                                    </div>
+    
+                                </div>
+    
+    
+                            </form>
                         </div>
-
-                        <div class="flex-box flexDirCol left alignItemsLeft">
-                            <label for="cert">Type of Certificate</label>
-                            <select name="cert" id="cert">
-                                <option value="">Barangay Clearance</option>
-                                <option value="">Business Clearance</option>
-                                <option value="">Certificate of Good Moral</option>
-                                <option value="">Certificate of Indigency</option>
-                            </select>
+                        <div class='vertContentDivider'>
+                            <form action="">
+                                <label for="">Purpose</label>
+                                    <div>
+                                        <input type="radio" name="purpose" id="police" style="width: auto;">
+                                        <label for="police">Police Clearance</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="purpose" id="nbi" style="width: auto;">
+                                        <label for="nbi">NBI Clearance</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="purpose" id="bir" style="width: auto;">
+                                        <label for="bir">BIR(TIN)</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="purpose" id="emp" style="width: auto;">
+                                        <label for="emp">Employment</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="purpose" id="schl" style="width: auto;">
+                                        <label for="schl">School Requirement</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="purpose" id="others" style="width: auto;">
+                                        <label for="others">Others</label>
+                                    </div>
+                            </form>
                         </div>
-
-                        <div class="flex-box flexDirCol left alignItemsLeft">
-                            <label for="">Name</label>
-                            <div class="flex-box flexDirRow">
-                                <input type="text" name="" id="">
-                                <button class='rndBtn'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                    </svg>
-                                </button>
-                            </div>
+                        <div>
+                            <form action="" class='flex-box flexDirCol'>
+                                <div class="flex-box flexDirCol left alignItemsLeft">
+                                    <label for="amntToPay">Amount To Pay</label>
+                                    <input type="text" name="amntToPay" id="cntrlno" readonly placeholder="20 Php">
+                                </div>
+                                <div class="flex-box flexDirCol left alignItemsLeft">
+                                    <label for="amntToPay">Amount To Pay</label>
+                                    <input type="text" name="amntToPay" id="cntrlno">
+                                </div>
+                            </form>
+                            <button style="background-color: var(--amber-500);">Clear</button>
+                            <button>Proceed</button>
                         </div>
+                    </div>
+                    
+                    
 
-                        <div class="flex-box flexDirCol left alignItemsLeft">
-                            <label for="">Address</label>
-                            <input type="text" name="" id="">
-                        </div>
-
-                        <div class="left">
-                            <label for="">Gender</label>
-                            <div>
-                                <input type="radio" name="gender" id="male" style="width: auto;">
-                                <label for="male">Male</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="gender" id="female" style="width: auto;">
-                                <label for="female">Female</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="gender" id="other" style="width: auto;">
-                                <label for="other">Other</label>
-                            </div>
-
-                        </div>
-
-
-                    </form>
                 </div>
 
                 <div id="Audit" class="tabContent">

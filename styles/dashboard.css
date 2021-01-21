@@ -104,6 +104,12 @@ svg{
     width: 100%;
     margin: 15px;
 }
+.vertContentDivider{
+    border-right: 1px solid var(--gray-400);
+    width: 25%;
+    height: 60vh;
+    margin: 15px;
+}
 
 .cardContent{
     padding: 15px 20px;
